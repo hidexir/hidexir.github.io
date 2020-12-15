@@ -1,0 +1,41 @@
+h1 { 
+  font-family: "Inter","BlinkMacSystemFont","Hiragino Kaku Gothic ProN","Hiragino Sans","Meiryo,sans-serif","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
+}
+
+
+.bg-first {
+  background-color: #fbfbff;
+}
+
+.bg-second {
+  background-color: #eafeff;
+}
+
+.rounded-custom {
+  border-radius: 9px !important;
+}
+
+.rounded-top-custom {
+  border-top-left-radius: 9px !important;
+  border-top-right-radius: 9px !important;
+}
+
+.shadow-float {
+    box-shadow: 5px 15px 30px -10px rgba(0,74,134,.1);
+    -webkit-transition: .25s ease;
+    transition: .25s ease;
+}
+
+.empty-color-box {
+  height: 70px;
+}
+
+
+.i-style {
+  font-size: 40px;
+  color: black;
+}
+
+pre {
+  padding: 10px;
+}

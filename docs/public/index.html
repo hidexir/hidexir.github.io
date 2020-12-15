@@ -4,7 +4,7 @@
 	<meta name="generator" content="Hugo 0.79.0" />
     <meta charset="utf-8">
     
-    <link rel="stylesheet" href="http://example.org/css/main.css">
+    <link rel="stylesheet" href="https://hidexir.github.io/css/main.css">
     <title> hidexir </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -29,23 +29,32 @@
     </article>
     <div class="row">
       
+      <div class="col-sm-4 col-6 mb-4">
+        <a href="https://hidexir.github.io/posts/" class="text-decoration-none">
+          <div class="card rounded-custom shadow-float p-2 border-0">
+            <p class="empty-color-box rounded-top-custom"></p>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Posts</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      
     </div>
   </main>
 </div>
 
 <script>
-  var colorPatter = ["#091540","#7692FF","#ABD2FA","#3D518C","#1B2CC1"]
+  var colorPatter = ["#091540", "#7692FF", "#ABD2FA", "#3D518C", "#1B2CC1"]
   var box = document.getElementsByClassName("empty-color-box")
-  var colorIndex = 0 
-  for (i=0; i < box.length; i++) {
+  var colorIndex = 0
+  for (i = 0; i < box.length; i++) {
     box[i].style.backgroundColor = colorPatter[colorIndex]
-    if (colorIndex >= colorPatter.length-1) {
-      console.log("call")
+    if (colorIndex >= colorPatter.length - 1) {
       colorIndex = 0
-    }else{
+    } else {
       colorIndex++
     }
-
   }
 </script>
 
