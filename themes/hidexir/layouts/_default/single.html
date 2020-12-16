@@ -5,8 +5,10 @@
 {{ define "main" }}
 <div class="bg-first">
   <main role="main" class="container p-5">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <h3 class="p-1 font-weight-bold">{{.Title}}</h3>
+  <div id="content" class="rounded-custom">
+    {{ .Content }}
+  </div>
   </main>
 </div>
 {{ end }}

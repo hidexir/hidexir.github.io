@@ -1,10 +1,15 @@
+@media only screen and (max-width: 720px) {
+  html {
+    font-size: 90%;
+  }
+}
+
 h1 { 
   font-family: "Inter","BlinkMacSystemFont","Hiragino Kaku Gothic ProN","Hiragino Sans","Meiryo,sans-serif","Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; 
 }
 
-
 .bg-first {
-  background-color: #fbfbff;
+  background-color: #e3e3ef;
 }
 
 .bg-second {
@@ -38,4 +43,24 @@ h1 {
 
 pre {
   padding: 10px;
+}
+
+#content {
+ background-color: #fff;
+ padding: 24px;
+ color: #343434;
+}
+
+#content h1{
+  border-bottom: 1px #e3e3ef solid;
+  font-size: 2.0rem;
+}
+
+#content h2{
+  border-bottom: 1px #e3e3ef solid;
+  font-size: 1.5rem;
+}
+
+#content h3{
+  font-size: 1.3rem;
 }
