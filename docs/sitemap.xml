@@ -3,11 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://hidexir.github.io/categories/</loc>
+    <loc>https://hidexir.github.io/abouts/</loc>
+    <lastmod>2020-12-16T01:14:24+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://hidexir.github.io/</loc>
+    <lastmod>2020-12-16T01:14:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hidexir.github.io/abouts/whoareyou/</loc>
+    <lastmod>2020-12-16T01:14:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hidexir.github.io/categories/</loc>
   </url>
   
   <url>
