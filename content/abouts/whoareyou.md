@@ -107,7 +107,7 @@ Typescript Nuxt Express
 主にツリー構造をもちいて高速化に成功しました。
 
 ## [ゾンビゲーム](https://apps.apple.com/jp/app/escape-from-uncle/id1444505240)
-サイバーエージェント時代の同期と２人で作成しました。解説をしているかたまでいて非常にうれしかったです。https://gameappch.com/app/?app=06132
+サイバーエージェント時代の同期と２人で作成しました。[解説](https://gameappch.com/app/?app=06132)をしているかたまでいて非常にうれしかったです。
 技術スタック
 Unity Maya
 自分は主に3Dオブジェクトは購入して中のロジックやmapのレイアウト、カメラの視点コントロールなどの実装をしました。

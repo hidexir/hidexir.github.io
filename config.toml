@@ -2,6 +2,7 @@ baseURL = "https://hidexir.github.io/"
 languageCode = "ja"
 title = "hidexir"
 theme="hidexir"
+publishDir="docs"
 
 [Params]
 nickname = "hidexir"
