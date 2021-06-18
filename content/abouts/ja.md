@@ -1,5 +1,5 @@
 ---
-title: "Who are you?"
+title: "自己紹介"
 date: 2020-12-16T01:14:24+09:00
 draft: false
 ---

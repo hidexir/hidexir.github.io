@@ -5,7 +5,7 @@
     
     <link rel="stylesheet" href="https://hidexir.github.io/css/main.css">
     <title>
-  Goでmysqlでの注意すること &ndash; hidexir
+  パケットから見るGoとMySQL &ndash; hidexir
 </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -22,10 +22,46 @@
     
 <div class="bg-first">
   <main role="main" class="container p-5">
-  <h3 class="p-1 font-weight-bold">Goでmysqlでの注意すること</h3>
+  <h3 class="p-1 font-weight-bold">パケットから見るGoとMySQL</h3>
   <div id="content" class="rounded-custom">
-    <h1 id="test">test</h1>
+    <h1 id="はじめに">はじめに</h1>
+<p>あるひ割と大きなデーター処理をするバッチ基盤を作っていた時にMySQLのプロトコルがきになったのでそれについてのメモです。</p>
+<h1 id="環境">環境</h1>
+<pre><code><div class="mermaid" align="center">
+    
+graph TD;
+    Client(Go)-->MySQL;
+    MySQL-->Client(Go);
 
+</div>
+
+</code></pre><p>上記の通信内容のキャプチャをしました。</p>
+<h1 id="調査内容">調査内容</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;log&#34;</span>
+)
+<span style="color:#66d9ef">var</span> (
+	<span style="color:#a6e22e">id</span> <span style="color:#66d9ef">int</span>
+	<span style="color:#a6e22e">name</span> <span style="color:#66d9ef">string</span>
+)
+<span style="color:#a6e22e">rows</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">Query</span>(<span style="color:#e6db74">&#34;SELECT id, name FROM users WHERE id = ?&#34;</span>, <span style="color:#ae81ff">1</span>)
+<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+	<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
+}
+<span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">rows</span>.<span style="color:#a6e22e">Close</span>()
+<span style="color:#66d9ef">for</span> <span style="color:#a6e22e">rows</span>.<span style="color:#a6e22e">Next</span>() {
+	<span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">rows</span>.<span style="color:#a6e22e">Scan</span>(<span style="color:#f92672">&amp;</span><span style="color:#a6e22e">id</span>, <span style="color:#f92672">&amp;</span><span style="color:#a6e22e">name</span>)
+	<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+		<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
+	}
+	<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">id</span>, <span style="color:#a6e22e">name</span>)
+}
+<span style="color:#a6e22e">err</span> = <span style="color:#a6e22e">rows</span>.<span style="color:#a6e22e">Err</span>()
+<span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+	<span style="color:#a6e22e">log</span>.<span style="color:#a6e22e">Fatal</span>(<span style="color:#a6e22e">err</span>)
+}
+</code></pre></div>
   </div>
   </main>
 </div>
@@ -50,7 +86,7 @@
                 </a>
               </div>
               <div class="col-sm text-right">
-                <img src=https://avatars1.githubusercontent.com/u/26104151?s&#61;460&amp;u&#61;0cd68b1b5f2fbb1940bfac368db17898675b9baf&amp;v&#61;4 alt="profile" class="img-thumbnail"  style="width: 200px;">
+                <img src=https://avatars1.githubusercontent.com/u/26104151?s&#61;460&amp;u&#61;0cd68b1b5f2fbb1940bfac368db17898675b9baf&amp;v&#61;4 alt="profile" style="width: 200px;">
               </div>
             </div>
           </div>
