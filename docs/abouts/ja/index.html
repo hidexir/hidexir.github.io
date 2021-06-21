@@ -29,10 +29,16 @@
 <p>1995年　神奈川県</p>
 <h2 id="back-born">Back born</h2>
 <p>エンジニアのきっかけは、小学生の時にみたブラッディマンデイをみたことが割と最初な気がします。</p>
-<p>当時祖母に当時は8000円ちかくしたハッキングの本をかってもらってからが今の原点かなと思います。<a href="https://www.amazon.co.jp/%E3%83%8F%E3%83%83%E3%82%AD%E3%83%B3%E3%82%B0%E9%9D%9E%E5%85%AC%E5%BC%8F%E3%82%AC%E3%82%A4%E3%83%89%E2%80%95%E5%A4%A9%E6%89%8D%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC%E3%81%8B%E3%82%89%E5%AD%A6%E3%81%B6%E6%94%BB%E6%92%83%E3%81%A8%E9%98%B2%E5%BE%A1-%E3%82%A2%E3%83%B3%E3%82%AD%E3%83%83%E3%83%88%E3%83%BB%E3%83%95%E3%82%A1%E3%83%87%E3%82%A3%E3%82%A2/dp/4861005302">書籍のリンク</a></p>
+<p>当時祖母に当時は8000円ちかくしたハッキングの本をかってもらってからが今の原点かなと思います。</p>
 <p>そして物事の仕組みなどを理解するのが今でも好きで仕事においても正しく理解して愚直に実装することが重要だと考えております。</p>
 <p>とくに自分が技術で好きな領域がセキュリティ・パフォーマンスチューニング・ネットワーク・Linux Kernel</p>
-<p>またアルゴリズムも非常に需要だと考えておりますが今は学習中です。</p>
+<p>またアルゴリズムも非常に需要だと考えております</p>
+<h1 id="picking-up-the-work-so-far">Picking up the work so far</h1>
+<ul>
+<li>想定負荷5000RPSの参照、100RPSの書き込みがあるサービスの実装とインフラ設計とセキュリティ用件、負荷試験を開発メンバ３人ほどで行いました。実装は読み込みが多めだったのでエッジによるキャッシュをおこい。負荷試験は負荷をかけるのも大変だったのでwrk2を使ったりしました。</li>
+<li>1000万レコード以上のデーターパイプラインの構築 apaceh beamをつかってストーム基盤の実装とBigqueryによるETL・ELT基盤をdatastoreで構築しました。より高速にbeamSDKを実行するためにavroやgsonなどをとりいれました。</li>
+<li>オンデマンド動画配信において負荷分散と最適サイズの動画変換のAWSを中心に自前の配信基盤とm3u8コンバーターの実装をしました。</li>
+</ul>
 <h1 id="carrier">Carrier</h1>
 <h2 id="company">Company</h2>
 <ul>
@@ -40,7 +46,7 @@
 <li><a href="https://www.cyberagent.co.jp/">株式会社サイバーエージェント</a> 2019~2020
 <ul>
 <li><a href="https://www.cyberagent.co.jp/news/detail/id=23000">新卒内定者による新子会社　株式会社Cyber Palを設立</a></li>
-<li><a href="https://cyberagent.ai/blog/pr/culture/5649/">▼「小規模組織にgke istio導入した結果」後藤　秀昂（株式会社Cyber Pal）</a></li>
+<li><a href="https://cyberagent.ai/blog/pr/culture/5649/">小規模組織にgke istio導入した結果」後藤　秀昂（株式会社Cyber Pal）</a></li>
 </ul>
 </li>
 </ul>
@@ -54,15 +60,14 @@
 <ul>
 <li>武蔵野大学経済学部卒業 2019年度卒業</li>
 <li>研究内容 ゲーム理論 マッチング理論</li>
-<li>卒業論文 検索エンジンの普及と消費者の行動について
-<ul>
-<li><a href="https://www.musashino-u.ac.jp/news/20180501-03.html">経済学科合同ゼミ「長期インターンシップの意義と進め方」を実施</a></li>
-</ul>
-</li>
+<li>卒業論文 検索エンジンの普及と消費者の行動について</li>
 </ul>
 <h1 id="publish">Publish</h1>
 <ul>
 <li><a href="https://news.mynavi.jp/kikaku/20180720-665544/">新進気鋭のホワイトハッカーとアンチウイルスソフトがガチンコ対決! 戦いの結末をレポート</a></li>
+<li><a href="https://qiita.com/hidexir/items/645b6d6cabf239d870d0">istio-ingressgateway ssl https 証明書 中間証明書 導入するよ</a></li>
+<li><a href="https://qiita.com/hidexir/items/6d2da4e431641cbf0122">Nginxとnodejsで認証プロキシを実現する※basic認証じゃないよ！！</a></li>
+<li><a href="https://hidexir.hatenablog.com/">GKEにistio導入をした話</a></li>
 </ul>
 <h1 id="skill">Skill</h1>
 <h2 id="lang">Lang</h2>
@@ -90,7 +95,7 @@
 <p>x86アーキテクチャの実行環境のエミュレーターをrustでフルスクラッチしました。</p>
 <h2 id="動画配信サービスhttpswanttyapp"><a href="https://wantty.app/">動画配信サービス</a></h2>
 <p>動画配信サービスです。トレーナ さんやスポーツ選手が動画をアップロードしてストリームとして視聴できます。</p>
-<h2 id="イーサリアムトークンを用いたサービスhttpswwwpeace-coinorgmessage"><a href="https://www.peace-coin.org/#!/message">イーサリアムトークンを用いたサービス</a></h2>
+<h2 id="イーサリアムトークンを用いたサービスhttpswwwpeace-coinorg"><a href="https://www.peace-coin.org">イーサリアムトークンを用いたサービス</a></h2>
 <p>ソリディティフレームワークを用いて主にサーバーサイドを担当しました。</p>
 <h2 id="性格診断サービスhttpswwwzelfiumcomja"><a href="https://www.zelfium.com/ja/">性格診断サービス</a></h2>
 <p>性格判断のパターンがとにかくおおいので一度是非やってみください。ユーザーからの質問の回答いかに高速に分類するかのアルゴリズムと裏でもつデーター構造は結構考えました。
@@ -115,7 +120,7 @@
                 <a href="https://github.com/hidexir">
                   <i class="fab fa-github-square i-style"></i>
                 </a>
-                <a href="https://www.facebook.com/hideaki.goto.33/">
+                <a href="">
                   <i class="fab fa-facebook-square i-style"></i>
                 </a>
                 <a href="https://twitter.com/hidexir">
