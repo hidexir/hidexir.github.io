@@ -61,6 +61,9 @@ vim emacs (for writing Japanese)
 
 # My Project
 
+## [ISUCON10](https://isucon.net/archives/55008744.html)
+rank #166 top 30% team yagyu
+
 ## [x86 emulator](https://github.com/hidexir/x86emu)
 I made a full-scratch emulator of the x86 architecture execution environment with rust.
 
