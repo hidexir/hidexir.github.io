@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on hidexir</title>
+    <link>https://hidexir.github.io/blogs/</link>
+    <description>Recent content in Blogs on hidexir</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 19 May 2021 20:00:00 +0900</lastBuildDate><atom:link href="https://hidexir.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloud Native Reading Group #7: runc</title>
+      <link>https://hidexir.github.io/blogs/cloud-native-reading-group-7-en/</link>
+      <pubDate>Wed, 19 May 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://hidexir.github.io/blogs/cloud-native-reading-group-7-en/</guid>
+      <description>Introduction This is a blog about my daily life.
+Hello, I attended this event through the introduction of Mr. Ohtsubo of wantedly.
+You can see the content of the day here.
+https://zenn.dev/potsbo/scraps/f6bad62e1ac6ac
+text I&amp;rsquo;m sure many of you are not familiar with the term &amp;ldquo;runc&amp;rdquo;.
+I&amp;rsquo;ve been working with docker as an engineer for a while now, and there are many cases where I touch it unconsciously.
+A simple history of docker can be found here.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Native 読書会第7回 runc</title>
+      <link>https://hidexir.github.io/blogs/cloud-native-%E8%AA%AD%E6%9B%B8%E4%BC%9A%E7%AC%AC7%E5%9B%9E-runc-copy/</link>
+      <pubDate>Wed, 19 May 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://hidexir.github.io/blogs/cloud-native-%E8%AA%AD%E6%9B%B8%E4%BC%9A%E7%AC%AC7%E5%9B%9E-runc-copy/</guid>
+      <description>はじめに なおBlogs自分の日常のメモになります。
+こんにちは以前にwantedlyの大坪さんの紹介で参加しました。
+こちらから当日の内容は見ることができます。
+https://zenn.dev/potsbo/scraps/f6bad62e1ac6ac
+本文 runcって言葉はあまり聴き馴染みがない人が多いのではないでしょうか？
+すくなくてもエンジニアとしてdockerなどをさわっていると無意識に触っているケースが非常に多いです。
+dockerの簡易な歴史のがこちらにまとまっております。
+https://eng-blog.iij.ad.jp/archives/1478
+もともとdockerはエンジンとランタイムが同じなまえでした。
+しかしインターフェースと中のランタイムをわける動きが出始めました。理由としてはもともとモジュールとして分離しており、汎用性をあげることが背景にあります。
+Kubernetesもなどのコンテナオーケストレーションなどでも内部ではruncなどが扱いたいため、APIとしての提供が始まるのは無理もないですね。
+そしてruncはもっともレイヤーが低い low level runtimeと呼ばれております。
+ここらは非常におもしろく
+日本製のコンテナランタイムのハコニワ https://github.com/haconiwa/haconiwa があったり 上記は多分OCIには準拠してないはずです。なのでKuberのruntimeには使えないかもしれないです。
+Googleが作っているセキュアコンテナのgVisorがあったりします。
+こちらは友人が発表している資料なのですが非常にわかりやすくまた彼もコミッターなので是非一読してみるといいかもしれません。
+https://speakerdeck.com/moricho/gvisordeshi-xian-surukorekarafalsekontenasekiyuritei
+感想 runcが一番企画としてしりたかったこともあり非常に有意義でした！ありがとうございました。
+反省 夜の時間帯でも自分の部屋を確保してもっと会話量を増やしたい。</description>
+    </item>
+    
+    <item>
+      <title>Cloud Native Reading Group #6: ArgoCD</title>
+      <link>https://hidexir.github.io/blogs/cloud-native-reading-group-6-en/</link>
+      <pubDate>Wed, 21 Apr 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://hidexir.github.io/blogs/cloud-native-reading-group-6-en/</guid>
+      <description>Introduction This is a blog about my daily life.
+Hello, I joined this event through the introduction of Mr. Ohtsubo from wantedly.
+You can see the content of the day here.
+https://zenn.dev/potsbo/scraps/8f64a637cf50f5
+Text I&amp;rsquo;ve always loved cloud-native technologies, and I&amp;rsquo;ve used ArgoCD and ArgoWorkflow in my work, but I haven&amp;rsquo;t had many opportunities to dive deep into the inner workings of them.
+It was not that long, but it was implemented in Go, and we read through the implementation based on the entry point of the main function.</description>
+    </item>
+    
+    <item>
+      <title>Cloud Native 読書会第6回 ArgoCD</title>
+      <link>https://hidexir.github.io/blogs/cloud-native-%E8%AA%AD%E6%9B%B8%E4%BC%9A%E7%AC%AC6%E5%9B%9E-argocd/</link>
+      <pubDate>Wed, 21 Apr 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://hidexir.github.io/blogs/cloud-native-%E8%AA%AD%E6%9B%B8%E4%BC%9A%E7%AC%AC6%E5%9B%9E-argocd/</guid>
+      <description>はじめに なおBlogs自分の日常のメモになります。
+こんにちは以前にwantedlyの大坪さんの紹介で参加しました。
+こちらから当日の内容は見ることができます。
+https://zenn.dev/potsbo/scraps/8f64a637cf50f5
+本文 もともとクラウドネイティブ技術がすきでArgoCDもArgoWorkflowも業務で使ったいたのですが、内部の仕組みまで深ぼることがなかなか機会として少なかったこともありました。
+時間はそこまで長くはないのですが、Goで実装がされており、main関数のエントリーポイントをベースに実装を読み進めました。
+参加しているメンバーもやはりSREが業務の中心になっているかたや、もともと内部実装にある程度詳しいかたもいたのですが、Goを読むということは変わりなく。非常によかったです。
+サービスの可用性を図る際にHeathCheckを行うと思うのですが、Argocdには状態が複数ありドキュメントでも多くは語られていないケースはあるのですが、Argoの場合だといかにあります。
+HealthStatusCode の定義
+https://github.com/argoproj/gitops-engine/blob/master/pkg/health/health.go#L8-L26
+// Represents resource health statusAlexander Matyushentsev, 11 months ago: • docs: document &amp;#39;top level&amp;#39; packages (#44) type HealthStatusCode string const ( // Indicates that health assessment failed and actual health status is unknown 	HealthStatusUnknown HealthStatusCode = &amp;#34;Unknown&amp;#34; // Progressing health status means that resource is not healthy but still have a chance to reach healthy state 	HealthStatusProgressing HealthStatusCode = &amp;#34;Progressing&amp;#34; // Resource is 100% healthy 	HealthStatusHealthy HealthStatusCode = &amp;#34;Healthy&amp;#34; // Assigned to resources that are suspended or paused.</description>
+    </item>
+    
+  </channel>
+</rss>

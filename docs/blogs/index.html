@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="https://hidexir.github.io/css/main.css">
+    <title> hidexir </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-light border-bottom">
+      <div role="main" class="container">
+        <a class="navbar-brand" href="/">
+          <h2 class="font-weight-bold">hidexir</h2>
+        </a>
+      </div>
+    </nav>
+
+    
+<div class="bg-first">
+  <main role="main" class="container p-5">
+    <article>
+      <header>
+        <h3 class="p-1 font-weight-bold">Blogs</h3>
+      </header>
+      
+    </article>
+    <div class="row">
+      
+      <div class="col-sm-4 col-6 mb-4">
+        <a href="https://hidexir.github.io/blogs/cloud-native-reading-group-7-en/" class="text-decoration-none">
+          <div class="card rounded-custom shadow-float p-2 border-0">
+            <p class="empty-color-box rounded-top-custom"></p>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Cloud Native Reading Group #7: runc</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="col-sm-4 col-6 mb-4">
+        <a href="https://hidexir.github.io/blogs/cloud-native-%E8%AA%AD%E6%9B%B8%E4%BC%9A%E7%AC%AC7%E5%9B%9E-runc-copy/" class="text-decoration-none">
+          <div class="card rounded-custom shadow-float p-2 border-0">
+            <p class="empty-color-box rounded-top-custom"></p>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Cloud Native 読書会第7回 runc</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="col-sm-4 col-6 mb-4">
+        <a href="https://hidexir.github.io/blogs/cloud-native-reading-group-6-en/" class="text-decoration-none">
+          <div class="card rounded-custom shadow-float p-2 border-0">
+            <p class="empty-color-box rounded-top-custom"></p>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Cloud Native Reading Group #6: ArgoCD</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+      <div class="col-sm-4 col-6 mb-4">
+        <a href="https://hidexir.github.io/blogs/cloud-native-%E8%AA%AD%E6%9B%B8%E4%BC%9A%E7%AC%AC6%E5%9B%9E-argocd/" class="text-decoration-none">
+          <div class="card rounded-custom shadow-float p-2 border-0">
+            <p class="empty-color-box rounded-top-custom"></p>
+            <div class="card-body">
+              <h5 class="card-title text-dark">Cloud Native 読書会第6回 ArgoCD</h5>
+            </div>
+          </div>
+        </a>
+      </div>
+      
+    </div>
+  </main>
+</div>
+
+<script>
+  var colorPatter = ["#091540", "#7692FF", "#ABD2FA", "#3D518C", "#1B2CC1"]
+  var box = document.getElementsByClassName("empty-color-box")
+  var colorIndex = 0
+  for (i = 0; i < box.length; i++) {
+    box[i].style.backgroundColor = colorPatter[colorIndex]
+    if (colorIndex >= colorPatter.length - 1) {
+      colorIndex = 0
+    } else {
+      colorIndex++
+    }
+  }
+</script>
+
+
+    
+    <footer class="footer mb-5">
+      <div class="container">
+        <div class="card mt-5 border-0">
+          <div class="card-body bg-second rounded-custom ">
+            <div class="row p-5">
+              <div class="col-sm">
+                <h2 class="font-weight-bold">i am hidexir</h2>
+                <a href="https://github.com/hidexir">
+                  <i class="fab fa-github-square i-style"></i>
+                </a>
+                <a href="https://www.facebook.com/hideaki.goto.33/">
+                  <i class="fab fa-facebook-square i-style"></i>
+                </a>
+                <a href="https://twitter.com/hidexir">
+                  <i class="fab fa-twitter-square i-style"></i>
+                </a>
+              </div>
+              <div class="col-sm text-right">
+                <img src=https://avatars1.githubusercontent.com/u/26104151?s&#61;460&amp;u&#61;0cd68b1b5f2fbb1940bfac368db17898675b9baf&amp;v&#61;4 alt="profile" style="width: 200px;">
+              </div>
+            </div>
+          </div>
+          <p class="blockquote-footer my-5">All right reserved © hidexir <cite title="Source Title">contacet on twiiter @hidexir</cite></p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.8.4/mermaid.min.js" integrity="sha512-as1BF4+iHZ3BVO6LLDQ7zrbvTXM+c/1iZ1qII/c3c4L8Rn5tHLpFUtpaEtBNS92f+xGsCzsD7b62XP3XYap6oA==" crossorigin="anonymous"></script>
+  </body>
+</html>
+

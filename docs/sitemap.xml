@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://hidexir.github.io/blogs/</loc>
+    <lastmod>2021-05-19T20:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hidexir.github.io/blogs/cloud-native-reading-group-7-en/</loc>
+    <lastmod>2021-05-19T20:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hidexir.github.io/blogs/cloud-native-%E8%AA%AD%E6%9B%B8%E4%BC%9A%E7%AC%AC7%E5%9B%9E-runc-copy/</loc>
+    <lastmod>2021-05-19T20:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hidexir.github.io/</loc>
+    <lastmod>2021-05-19T20:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hidexir.github.io/blogs/cloud-native-reading-group-6-en/</loc>
+    <lastmod>2021-04-21T20:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hidexir.github.io/blogs/cloud-native-%E8%AA%AD%E6%9B%B8%E4%BC%9A%E7%AC%AC6%E5%9B%9E-argocd/</loc>
+    <lastmod>2021-04-21T20:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hidexir.github.io/abouts/</loc>
+    <lastmod>2020-12-16T01:14:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hidexir.github.io/abouts/en/</loc>
+    <lastmod>2020-12-16T01:14:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hidexir.github.io/abouts/ja/</loc>
+    <lastmod>2020-12-16T01:14:24+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hidexir.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://hidexir.github.io/tags/</loc>
+  </url>
+  
+</urlset>
