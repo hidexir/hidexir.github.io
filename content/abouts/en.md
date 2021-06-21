@@ -25,6 +25,14 @@ I also think that algorithms are very important.
 - Building a data pipeline with more than 10 million records Using apaceh beam, we implemented a storm infrastructure and built an ETL/ELT infrastructure using bigquery with datastore. In order to run beamSDK more quickly, we incorporated avro and gson.
 - For on-demand video delivery, we implemented our own delivery infrastructure and m3u8 converter, mainly using AWS for load balancing and optimal size video conversion.
 
+## What I've tried to do down the road.
+- OSS
+- Global (English speaking environment, etc.)
+- Startup
+- Growth
+- Security
+- High Performance Tuning
+
 # Carrier
 ## Company
 - [Yapuri Corporation](https://yappli.co.jp/) 2020    
