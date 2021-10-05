@@ -13,10 +13,10 @@
       <pubDate>Wed, 16 Dec 2020 01:14:24 +0900</pubDate>
       
       <guid>https://hidexir.github.io/abouts/en/</guid>
-      <description>Info Basic 1995 Kanagawa, Japan
-Back born I think the first time I became an engineer was when I saw Bloody Monday in elementary school.
-My grandmother gave me a book on hacking, which cost about 8,000 yen at the time, and that was the starting point of my career.
-I still like to understand how things work, and I think it is important to understand and implement things correctly in my work.</description>
+      <description>Info Intro Thank you for your interest.
+I&amp;rsquo;m a software engineer. I like computer basics to applications.
+I also have a FAQ, so I hope you will have a look at that.
+Basic  Born in 1995  Carrier  Yapuri Corporation 2020~ CyberAgent, Inc. 2019~2020  New subsidiary company Cyber Pal Inc. established by new graduates The result of introducing gke istio to a small organization [Hideaki Goto (Cyber Pal Inc.</description>
     </item>
     
     <item>
@@ -25,13 +25,23 @@ I still like to understand how things work, and I think it is important to under
       <pubDate>Wed, 16 Dec 2020 01:14:24 +0900</pubDate>
       
       <guid>https://hidexir.github.io/abouts/ja/</guid>
-      <description>Info Basic 1995年　神奈川県
-Back born エンジニアのきっかけは、小学生の時にみたブラッディマンデイをみたことが割と最初な気がします。
-当時祖母に当時は8000円ちかくしたハッキングの本をかってもらってからが今の原点かなと思います。
-そして物事の仕組みなどを理解するのが今でも好きで仕事においても正しく理解して愚直に実装することが重要だと考えております。
-とくに自分が技術で好きな領域がセキュリティ・パフォーマンスチューニング・ネットワーク・Linux Kernel
-またアルゴリズムも非常に需要だと考えております
-Picking up the work so far  想定負荷5000RPSの参照、100RPSの書き込みがあるサービスの実装とインフラ設計とセキュリティ用件、負荷試験を開発メンバ３人ほどで行いました。実装は読み込みが多めだったのでエッジによるキャッシュをおこい。負荷試験は負荷をかけるのも大変だったのでwrk2を使ったりしました。 1000万レコード以上のデーターパイプラインの構築 apaceh beamをつかってストーム基盤の実装とBigqueryによるETL・ELT基盤をdatastoreで構築しました。より高速にbeamSDKを実行するためにavroやgsonなどをとりいれました。 オンデマンド動画配信において負荷分散と最適サイズの動画変換のAWSを中心に自前の配信基盤とm3u8コンバーターの実装をしました。  この先やってみたこと  OSS グローバル（英語の使える環境など） スタートアップ グロース セキュリティ ハイパフォーマンスチューニング  Carrier Company  株式会社ヤプリ 2020~ 株式会社サイバーエージェント 2019~2020  新卒内定者による新子会社　株式会社Cyber Palを設立 小規模組織にgke istio導入した結果」後藤　秀昂（株式会社Cyber Pal）    intern  株式会社AbemaTV 2018~2019 UUUM株式会社 2017~2018 deBit株式会社 2017~2018  University  武蔵野大学経済学部卒業 2019年度卒業 研究内容 ゲーム理論 マッチング理論 卒業論文 検索エンジンの普及と消費者の行動について  Publish  新進気鋭のホワイトハッカーとアンチウイルスソフトがガチンコ対決!</description>
+      <description>Info Intro 閲覧ありがとうございます。
+ソフトウェアエンジニアです。コンピューターの基礎からアプリケーションまで好きです。
+FAQもあるのでそちらを見ていただければと思います。
+Basic  1995年生まれ  Carrier  株式会社ヤプリ 2020~ 株式会社サイバーエージェント 2019~2020  新卒内定者による新子会社　株式会社Cyber Palを設立 小規模組織にgke istio導入した結果」後藤　秀昂（株式会社Cyber Pal） 株式会社AbemaTV 2018~2019   UUUM株式会社 2017~2018 deBit株式会社 2017~2018  Picking up　※内容は技術よりです。 ライブ配信でテックリード業務 想定負荷5000RPS以上で1:1:Nのライブ配信サービスの開発
+大規模ということもあり、Go言語をバックエンドインフラにKubernetes(GKE)を採用しました。またネットワーク全体の関しにistioを試みました。負荷試験やセキュリティ用件など厳しかったですが、少人数により開発しました。
+もともと配信をm3u8とう動画配信のストリーミングを自作をこころみたのですが、インフラコストの兼ね合いや配信部分は主に外部のSDKを採用したりなど最終的なは内部の重要部分はすべてGoで作成しました。
+Go自体のパフォーマンスチューニングなども行いREADに関しては1coreで1000RPSをクリアしました。また書き込みに関しても100~300RPSの性能をだし、マシンのリソースをおしみなく使いました。
+セキュリティでは主にインフラとバックエンドに関する部分もベンダー含め担当しました。内容としてはburpsuiteを用いて通信の改竄などを起きた際のサービス影響やSQLやCSRF、認証などを攻撃ベースでベンダとのダブルチェックを行いました。
+データーパイプライン構築 3TB以上を毎日集計し、マルチテナントプラットフォームにのダッシュボード（データーがいろいろみれる管理画面みたいなやつ）を作成しました。
+データー量が大きいので、GCPのデーターフローを採用しました。理由は安くてフルマネだからです。
+また結構内部での変換処理がいろいろあったのでApache beam SDK (java)をもちいて自作テンプレートをかきました。また高速化を図るため、内部のデーターのシリアライズはAvroをつかうことで大幅なデーター削減と高速化を実現しました。
+参考にメルカリでの事例や、オープンソースをみました。
+Back born もともと小さい頃からコンピューターは好きでした。当時はネットサーフィンがメインで簡単なプログラムの本などで見様見真似でした。
+大学時代にフロントの仕事を受けながらより本格的にバックエンド、インフラをはじめ、自分でサービスをつくったりしたものの事業作りに無知だったため、
+仮想通貨事業でRustでjsonパーサーをつくったり、AbemaTVで広告の開発をしておりました。
+当時は低レイヤーが好きだったこともあり、Googleのエンジニアに漠然となりたいと考えていたのですが、アルゴリズムや英語能力がたりないと感じたので、国内のもっとも力がつくと考えそのままAbemaの開発をするためCyBerAgentに入社しました。
+Publish  新進気鋭のホワイトハッカーとアンチウイルスソフトがガチンコ対決! 戦いの結末をレポート istio-ingressgateway ssl https 証明書 中間証明書 導入するよ Nginxとnodejsで認証プロキシを実現する※basic認証じゃないよ！！ GKEにistio導入をした話  Skill 一般的にまともに仕事をしているとかなりの量になるので、ここでは中でも好きなこと、得意なことを中心に載せております。</description>
     </item>
     
   </channel>

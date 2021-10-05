@@ -49,18 +49,28 @@ pre {
  background-color: #fff;
  padding: 24px;
  color: #343434;
+ line-height: 1.9;
 }
 
 #content h1{
   border-bottom: 1px #e3e3ef solid;
-  font-size: 2.0rem;
+  font-size: 1.7rem;
+  margin-top: 2.3rem;
+  margin-bottom: 1.1rem;
+  padding-bottom: 0.2rem;
 }
 
 #content h2{
-  border-bottom: 1px #e3e3ef solid;
   font-size: 1.5rem;
+  margin-top: 2.3rem;
 }
 
 #content h3{
   font-size: 1.3rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+#content li {
+  margin: .4rem 0 ;
 }

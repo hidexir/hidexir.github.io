@@ -25,52 +25,44 @@
   <h3 class="p-1 font-weight-bold">自己紹介</h3>
   <div id="content" class="rounded-custom">
     <h1 id="info">Info</h1>
+<h1 id="intro">Intro</h1>
+<p>閲覧ありがとうございます。<br>
+ソフトウェアエンジニアです。コンピューターの基礎からアプリケーションまで好きです。<br>
+<a href="https://hidexir.github.io/blogs/faq/">FAQ</a>もあるのでそちらを見ていただければと思います。</p>
 <h2 id="basic">Basic</h2>
-<p>1995年　神奈川県</p>
-<h2 id="back-born">Back born</h2>
-<p>エンジニアのきっかけは、小学生の時にみたブラッディマンデイをみたことが割と最初な気がします。</p>
-<p>当時祖母に当時は8000円ちかくしたハッキングの本をかってもらってからが今の原点かなと思います。</p>
-<p>そして物事の仕組みなどを理解するのが今でも好きで仕事においても正しく理解して愚直に実装することが重要だと考えております。</p>
-<p>とくに自分が技術で好きな領域がセキュリティ・パフォーマンスチューニング・ネットワーク・Linux Kernel</p>
-<p>またアルゴリズムも非常に需要だと考えております</p>
-<h1 id="picking-up-the-work-so-far">Picking up the work so far</h1>
 <ul>
-<li>想定負荷5000RPSの参照、100RPSの書き込みがあるサービスの実装とインフラ設計とセキュリティ用件、負荷試験を開発メンバ３人ほどで行いました。実装は読み込みが多めだったのでエッジによるキャッシュをおこい。負荷試験は負荷をかけるのも大変だったのでwrk2を使ったりしました。</li>
-<li>1000万レコード以上のデーターパイプラインの構築 apaceh beamをつかってストーム基盤の実装とBigqueryによるETL・ELT基盤をdatastoreで構築しました。より高速にbeamSDKを実行するためにavroやgsonなどをとりいれました。</li>
-<li>オンデマンド動画配信において負荷分散と最適サイズの動画変換のAWSを中心に自前の配信基盤とm3u8コンバーターの実装をしました。</li>
-</ul>
-<h2 id="この先やってみたこと">この先やってみたこと</h2>
-<ul>
-<li>OSS</li>
-<li>グローバル（英語の使える環境など）</li>
-<li>スタートアップ</li>
-<li>グロース</li>
-<li>セキュリティ</li>
-<li>ハイパフォーマンスチューニング</li>
+<li>1995年生まれ</li>
 </ul>
 <h1 id="carrier">Carrier</h1>
-<h2 id="company">Company</h2>
 <ul>
 <li><a href="https://yappli.co.jp/">株式会社ヤプリ</a> 2020~</li>
 <li><a href="https://www.cyberagent.co.jp/">株式会社サイバーエージェント</a> 2019~2020
 <ul>
 <li><a href="https://www.cyberagent.co.jp/news/detail/id=23000">新卒内定者による新子会社　株式会社Cyber Palを設立</a></li>
 <li><a href="https://cyberagent.ai/blog/pr/culture/5649/">小規模組織にgke istio導入した結果」後藤　秀昂（株式会社Cyber Pal）</a></li>
+<li><a href="https://abema.tv/">株式会社AbemaTV</a> 2018~2019</li>
 </ul>
 </li>
-</ul>
-<h2 id="intern">intern</h2>
-<ul>
-<li><a href="https://abema.tv/">株式会社AbemaTV</a> 2018~2019</li>
 <li><a href="https://www.uuum.co.jp/">UUUM株式会社</a> 2017~2018</li>
 <li><a href="https://debit.co.jp/">deBit株式会社</a> 2017~2018</li>
 </ul>
-<h2 id="university">University</h2>
-<ul>
-<li>武蔵野大学経済学部卒業 2019年度卒業</li>
-<li>研究内容 ゲーム理論 マッチング理論</li>
-<li>卒業論文 検索エンジンの普及と消費者の行動について</li>
-</ul>
+<h1 id="picking-up内容は技術よりです">Picking up　※内容は技術よりです。</h1>
+<h2 id="ライブ配信でテックリード業務">ライブ配信でテックリード業務</h2>
+<p>想定負荷5000RPS以上で1:1:Nのライブ配信サービスの開発<br>
+大規模ということもあり、Go言語をバックエンドインフラにKubernetes(GKE)を採用しました。またネットワーク全体の関しにistioを試みました。負荷試験やセキュリティ用件など厳しかったですが、少人数により開発しました。<br>
+もともと配信をm3u8とう動画配信のストリーミングを自作をこころみたのですが、インフラコストの兼ね合いや配信部分は主に外部のSDKを採用したりなど最終的なは内部の重要部分はすべてGoで作成しました。<br>
+Go自体のパフォーマンスチューニングなども行いREADに関しては1coreで1000RPSをクリアしました。また書き込みに関しても100~300RPSの性能をだし、マシンのリソースをおしみなく使いました。<br>
+セキュリティでは主にインフラとバックエンドに関する部分もベンダー含め担当しました。内容としてはburpsuiteを用いて通信の改竄などを起きた際のサービス影響やSQLやCSRF、認証などを攻撃ベースでベンダとのダブルチェックを行いました。</p>
+<h2 id="データーパイプライン構築">データーパイプライン構築</h2>
+<p>3TB以上を毎日集計し、マルチテナントプラットフォームにのダッシュボード（データーがいろいろみれる管理画面みたいなやつ）を作成しました。<br>
+データー量が大きいので、GCPのデーターフローを採用しました。理由は安くてフルマネだからです。<br>
+また結構内部での変換処理がいろいろあったのでApache beam SDK (java)をもちいて自作テンプレートをかきました。また高速化を図るため、内部のデーターのシリアライズはAvroをつかうことで大幅なデーター削減と高速化を実現しました。<br>
+参考に<a href="https://engineering.mercari.com/blog/entry/mercari-dataflow-template/">メルカリでの事例</a>や、<a href="https://github.com/mercari/DataflowTemplate">オープンソース</a>をみました。</p>
+<h1 id="back-born">Back born</h1>
+<p>もともと小さい頃からコンピューターは好きでした。当時はネットサーフィンがメインで簡単なプログラムの本などで見様見真似でした。<br>
+大学時代にフロントの仕事を受けながらより本格的にバックエンド、インフラをはじめ、自分でサービスをつくったりしたものの事業作りに無知だったため、<br>
+仮想通貨事業でRustでjsonパーサーをつくったり、AbemaTVで広告の開発をしておりました。<br>
+当時は低レイヤーが好きだったこともあり、Googleのエンジニアに漠然となりたいと考えていたのですが、アルゴリズムや英語能力がたりないと感じたので、国内のもっとも力がつくと考えそのままAbemaの開発をするためCyBerAgentに入社しました。</p>
 <h1 id="publish">Publish</h1>
 <ul>
 <li><a href="https://news.mynavi.jp/kikaku/20180720-665544/">新進気鋭のホワイトハッカーとアンチウイルスソフトがガチンコ対決! 戦いの結末をレポート</a></li>
@@ -79,38 +71,33 @@
 <li><a href="https://hidexir.hatenablog.com/">GKEにistio導入をした話</a></li>
 </ul>
 <h1 id="skill">Skill</h1>
+<p>一般的にまともに仕事をしているとかなりの量になるので、ここでは中でも好きなこと、得意なことを中心に載せております。</p>
+<h2 id="cloud">Cloud</h2>
+<p>AWSやGCPサービスを作るにあたってのDBやネットワーク、ストレージ、システムデザインはできます。 またオンプレ（VPS）による開発も行っておりました。</p>
 <h2 id="lang">Lang</h2>
-<ul>
-<li>Go</li>
-<li>Rust</li>
-<li>Python</li>
-<li>Java</li>
-<li>Scala</li>
-<li>C++</li>
-<li>TypeScript</li>
-</ul>
-<h2 id="infra">Infra</h2>
-<ul>
-<li>AWS</li>
-<li>GCP</li>
-<li>Kubernetes</li>
-</ul>
+<p>Go Rust Python Java Scala C++ TypeScript</p>
+<h2 id="keywords">Keywords</h2>
+<p>Kubernetes Terraform Fastly Nginx Istio Envoy</p>
 <h2 id="editor">editor</h2>
-<p>vim emacs(日本語書く時)</p>
-<h1 id="my-project">My Project</h1>
+<p>vim 好きな方は是非話しましょう。</p>
+<h1 id="hobby">Hobby</h1>
 <h2 id="isucon10httpsisuconnetarchives55008744html"><a href="https://isucon.net/archives/55008744.html">ISUCON10</a></h2>
-<p>rank #166 top 30% team yagyu</p>
+<p>わりと上位になりました。
+rank #166 team yagyu</p>
+<h2 id="isucon9">ISUCON9</h2>
+<p>たしか半分くらいだった</p>
 <h2 id="x86-emulatorhttpsgithubcomhidexirx86emu"><a href="https://github.com/hidexir/x86emu">x86 emulator</a></h2>
-<p>x86アーキテクチャの実行環境のエミュレーターをrustでフルスクラッチしました。</p>
-<h2 id="動画配信サービスhttpswanttyapp"><a href="https://wantty.app/">動画配信サービス</a></h2>
-<p>動画配信サービスです。トレーナ さんやスポーツ選手が動画をアップロードしてストリームとして視聴できます。</p>
-<h2 id="イーサリアムトークンを用いたサービスhttpswwwpeace-coinorg"><a href="https://www.peace-coin.org">イーサリアムトークンを用いたサービス</a></h2>
-<p>ソリディティフレームワークを用いて主にサーバーサイドを担当しました。</p>
+<p>x86アーキテクチャの実行環境のエミュレーターをrustでフルスクラッチしました。
+スクラップ はこちら <a href="https://zenn.dev/hidexir/scraps/e110b61cdf1857">https://zenn.dev/hidexir/scraps/e110b61cdf1857</a></p>
+<h2 id="スポーツ知見シェアサービスhttpswanttyapp"><a href="https://wantty.app/">スポーツ知見シェアサービス</a></h2>
+<p>動画配信サービスです。トレーナ さんやスポーツ選手が動画をアップロードしてストリームとして視聴できます。主に動画配信周りとインフラ</p>
+<h2 id="イーサリアムトークンを用いたサービス">イーサリアムトークンを用いたサービス</h2>
+<p>趣味で、ソリディティフレームワークを用いて主にサーバーサイドを担当しました。</p>
 <h2 id="性格診断サービスhttpswwwzelfiumcomja"><a href="https://www.zelfium.com/ja/">性格診断サービス</a></h2>
 <p>性格判断のパターンがとにかくおおいので一度是非やってみください。ユーザーからの質問の回答いかに高速に分類するかのアルゴリズムと裏でもつデーター構造は結構考えました。
 主にツリー構造をもちいて高速化に成功しました。</p>
 <h2 id="ゾンビゲームhttpsappsapplecomjpappescape-from-uncleid1444505240"><a href="https://apps.apple.com/jp/app/escape-from-uncle/id1444505240">ゾンビゲーム</a></h2>
-<p>サイバーエージェント時代の同期と２人で作成しました。<a href="https://gameappch.com/app/?app=06132">解説</a>をしているかたまでいて非常にうれしかったです。
+<p>サイバーエージェント時代の同期と２人で作成しました。<a href="https://gameappch.com/app/?app=06132">解説ブログが書かれてた！</a>をしているかたまでいて非常にうれしかったです。
 自分は主に3Dオブジェクトは購入して中のロジックやmapのレイアウト、カメラの視点コントロールなどの実装をしました。</p>
 
   </div>

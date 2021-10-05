@@ -25,93 +25,80 @@
   <h3 class="p-1 font-weight-bold">Introduce Yourself</h3>
   <div id="content" class="rounded-custom">
     <h1 id="info">Info</h1>
-<h1 id="basic">Basic</h1>
-<p>1995 Kanagawa, Japan</p>
-<h2 id="back-born">Back born</h2>
-<p>I think the first time I became an engineer was when I saw Bloody Monday in elementary school.</p>
-<p>My grandmother gave me a book on hacking, which cost about 8,000 yen at the time, and that was the starting point of my career.</p>
-<p>I still like to understand how things work, and I think it is important to understand and implement things correctly in my work.</p>
-<p>My favorite areas of technology are security, performance tuning, networking, and Linux Kernel.</p>
-<p>I also think that algorithms are very important.</p>
-<h1 id="picking-up-the-work-so-far">Picking up the work so far</h1>
+<h1 id="intro">Intro</h1>
+<p>Thank you for your interest.<br>
+I&rsquo;m a software engineer. I like computer basics to applications.<br>
+I also have a <a href="https://hidexir.github.io/blogs/faq/">FAQ</a>, so I hope you will have a look at that.</p>
+<h2 id="basic">Basic</h2>
 <ul>
-<li>I implemented a service with an expected load of 5000 RPS references, 100 RPS writes, infrastructure design, security requirements, and load testing with about 3 development members. The implementation had a lot of reads, so we used edge caching. For the load test, we used wrk2 because it was hard to put a load on it.</li>
-<li>Building a data pipeline with more than 10 million records Using apaceh beam, we implemented a storm infrastructure and built an ETL/ELT infrastructure using bigquery with datastore. In order to run beamSDK more quickly, we incorporated avro and gson.</li>
-<li>For on-demand video delivery, we implemented our own delivery infrastructure and m3u8 converter, mainly using AWS for load balancing and optimal size video conversion.</li>
+<li>Born in 1995</li>
 </ul>
-<h2 id="what-ive-tried-to-do-down-the-road">What I&rsquo;ve tried to do down the road.</h2>
+<h2 id="carrier">Carrier</h2>
 <ul>
-<li>OSS</li>
-<li>Global (English speaking environment, etc.)</li>
-<li>Startup</li>
-<li>Growth</li>
-<li>Security</li>
-<li>High Performance Tuning</li>
-</ul>
-<h1 id="carrier">Carrier</h1>
-<h2 id="company">Company</h2>
-<ul>
-<li><a href="https://yappli.co.jp/">Yapuri Corporation</a> 2020</li>
+<li><a href="https://yappli.co.jp/">Yapuri Corporation</a> 2020~</li>
 <li><a href="https://www.cyberagent.co.jp/">CyberAgent, Inc.</a> 2019~2020
 <ul>
-<li><a href="https://www.cyberagent.co.jp/news/detail/id=23000">Established a new subsidiary company Cyber Pal Inc. by new graduates informal offer</a></li>
+<li><a href="https://www.cyberagent.co.jp/news/detail/id=23000">New subsidiary company Cyber Pal Inc. established by new graduates</a></li>
 <li><a href="https://cyberagent.ai/blog/pr/culture/5649/">The result of introducing gke istio to a small organization</a> [Hideaki Goto (Cyber Pal Inc.)</li>
+<li><a href="https://abema.tv/">Abema TV Inc</a> 2018~2019</li>
 </ul>
 </li>
-</ul>
-<h2 id="intern">intern</h2>
-<ul>
-<li><a href="https://abema.tv/">Abema TV Corporation</a> 2018~2019</li>
 <li><a href="https://www.uuum.co.jp/">UUUM Corporation</a> 2017~2018</li>
 <li><a href="https://debit.co.jp/">deBit Corporation</a> 2017~2018</li>
 </ul>
-<h2 id="university">University</h2>
-<ul>
-<li>Graduate from Musashino University, Faculty of Economics, 2019</li>
-<li>Research Topics Game Theory Matching Theory</li>
-<li>Graduation Thesis The Spread of Search Engines and Consumer Behavior</li>
-</ul>
+<h1 id="picking-up-content-is-more-than-technology">Picking up *Content is more than technology.</h1>
+<h2 id="tech-lead-work-in-live-streaming">Tech lead work in live streaming.</h2>
+<p>Developing a 1:1:N live streaming service with an expected load of over 5000 RPS.<br>
+Because of the large scale of the project, we used Go language and Kubernetes (GKE) for the backend infrastructure. We also tried to use istio for the entire network. It was a tough project with load tests and security requirements, but it was developed by a small group of people.<br>
+Originally, we tried to create our own streaming video distribution using m3u8, but in the end, all the important internal parts were created using Go, such as the combination of infrastructure costs and the use of external SDKs for the distribution part.<br>
+We also tuned the performance of Go itself and achieved 1000RPS in 1core for READ. We also achieved 100 to 300 RPS for writing, using all the resources of the machine.<br>
+For security, I was mainly in charge of the infrastructure and backend, including the vendor. We used burpsuite to double-check the impact on the service in case of communication tampering, SQL, CSRF, authentication, etc. with the vendors based on the attacks.</p>
+<h2 id="data-pipeline-construction">Data pipeline construction</h2>
+<p>We aggregated more than 3TB of data daily and created a dashboard (like a management screen where you can see various data) for a multi-tenant platform.<br>
+Because of the large amount of data, we adopted GCP&rsquo;s data flow. The reason is that it is cheap and fully managed.<br>
+Also, there were a lot of internal conversion processes, so I used Apache beam SDK (java) to create my own templates. Also, to speed up the process, I used Avro to serialize the internal data, which greatly reduced the amount of data and increased the speed.<br>
+For reference, see <a href="https://engineering.mercari.com/blog/entry/mercari-dataflow-template/">Mercari case study</a> and <a href="https://github.com/mercari/">open source</a>. DataflowTemplate).</p>
+<h1 id="back-born">Back born</h1>
+<p>I have always liked computers since I was little. At that time, I mainly surfed the net and read books on simple programs to see what I could do.<br>
+When I was in college, I took a front-end job and started working on the back-end and infrastructure more seriously.<br>
+I built a json parser with Rust for a virtual currency business and developed ads for Abema TV.<br>
+At the time, I had a vague idea of becoming a Google engineer because I liked the lower layers, but I felt that I didn&rsquo;t have the algorithms or English skills, so I joined CyberAgent to develop Abema, thinking that it would give me the most power in Japan.</p>
 <h1 id="publish">Publish</h1>
 <ul>
-<li><a href="https://news.mynavi.jp/kikaku/20180720-665544/">Up-and-coming white hackers and anti-virus software slug it out! Report on the outcome of the battle</a></li>
+<li>Up-and-coming white hackers and anti-virus software go head-to-head! Report on the end of the battle](<a href="https://news.mynavi.jp/kikaku/20180720-665544/">https://news.mynavi.jp/kikaku/20180720-665544/</a>)</li>
 <li><a href="https://qiita.com/hidexir/items/645b6d6cabf239d870d0">istio-ingressgateway ssl https certificate intermediate certificate I&rsquo;ll introduce</a></li>
 <li>[Implementing an authentication proxy with Nginx and nodejs *Not basic authentication!] (<a href="https://qiita.com/hidexir/items/6d2da4e431641cbf0122">https://qiita.com/hidexir/items/6d2da4e431641cbf0122</a>)</li>
 <li><a href="https://hidexir.hatenablog.com/">The story of istio installation in GKE</a></li>
 </ul>
 <h1 id="skill">Skill</h1>
+<p>In general, I have a lot of skills when I&rsquo;m working properly, so I&rsquo;m focusing on what I like and what I&rsquo;m good at.</p>
+<h1 id="-cloud"># Cloud</h1>
+<p>I can do DB, network, storage, and system design for creating AWS and GCP services. I&rsquo;ve also done on-premise development (VPS).</p>
 <h2 id="lang">Lang</h2>
-<ul>
-<li>Go</li>
-<li>Rust</li>
-<li>Python</li>
-<li>Java</li>
-<li>Scala</li>
-<li>C++</li>
-<li>TypeScript</li>
-</ul>
-<h2 id="infra">Infra</h2>
-<ul>
-<li>AWS</li>
-<li>GCP</li>
-<li>Kubernetes</li>
-</ul>
+<p>Go Rust Python Java Scala C++ TypeScript</p>
+<h2 id="keywords">Keywords</h2>
+<p>Kubernetes Terraform Fastly Nginx Istio Envoy</p>
 <h2 id="editor">editor</h2>
-<p>vim emacs (for writing Japanese)</p>
-<h1 id="my-project">My Project</h1>
+<p>If you like vim, let&rsquo;s talk.</p>
+<h1 id="hobby">Hobby</h1>
 <h2 id="isucon10httpsisuconnetarchives55008744html"><a href="https://isucon.net/archives/55008744.html">ISUCON10</a></h2>
-<p>rank #166 top 30% team yagyu</p>
+<p>I got rather high rank.
+rank #166 team yagyu</p>
+<h2 id="isucon9">ISUCON9</h2>
+<p>I think I was about halfway there.</p>
 <h2 id="x86-emulatorhttpsgithubcomhidexirx86emu"><a href="https://github.com/hidexir/x86emu">x86 emulator</a></h2>
-<p>I made a full scratch emulator of x86 architecture execution environment with rust.</p>
-<h2 id="video-distribution-servicehttpswanttyapp"><a href="https://wantty.app/">Video distribution service</a></h2>
-<p>This is a video distribution service. Trainers and athletes can upload their videos and watch them as streams.</p>
-<h2 id="service-using-ethereum-tokenshttpswwwpeace-coinorg"><a href="https://www.peace-coin.org">Service using Ethereum tokens</a></h2>
-<p>I was mainly in charge of the server side using the Solidity framework.</p>
+<p>I made a full-scratch emulator of the execution environment for the x86 architecture with rust.
+The scrap is here: <a href="https://zenn.dev/hidexir/scraps/e110b61cdf1857">https://zenn.dev/hidexir/scraps/e110b61cdf1857</a></p>
+<h2 id="sports-knowledge-sharing-servicehttpswanttyapp"><a href="https://wantty.app/">Sports knowledge sharing service</a></h2>
+<p>This is a video distribution service. Trainers and athletes can upload their videos and watch them as streams. Mainly around video distribution and infrastructure.</p>
+<h2 id="service-using-ethereum-tokens">Service using Ethereum tokens.</h2>
+<p>As a hobby, I mainly worked on the server side using the Solidity framework.</p>
 <h2 id="personality-assessment-servicehttpswwwzelfiumcomja"><a href="https://www.zelfium.com/ja/">Personality assessment service</a></h2>
-<p>There are a lot of patterns for personality assessment, so please try it once. I thought a lot about the algorithm and the data structure behind the algorithm to classify the answers to the questions from the users as fast as possible.
+<p>There are a lot of patterns for personality assessment, so please try it. I thought a lot about the algorithm and the data structure behind the algorithm to classify the answers to the questions from the users as fast as possible.
 I mainly used a tree structure and succeeded in speeding it up.</p>
 <h2 id="zombie-gamehttpsappsapplecomjpappescape-from-uncleid1444505240"><a href="https://apps.apple.com/jp/app/escape-from-uncle/id1444505240">Zombie game</a></h2>
-<p>Created by me and my classmate from CyberAgent days. I was very happy to see that there were even people doing <a href="https://gameappch.com/app/?app=06132">commentary</a>.
-I mainly purchased the 3D objects and implemented the internal logic, map layout, and camera viewpoint control. Translated with <a href="http://www.DeepL.com/Translator">www.DeepL.com/Translator</a> (free version)</p>
+<p>I created this game with my classmate from CyberAgent. [An explanation blog was written!] (<a href="https://gameappch.com/app/?app=06132),">https://gameappch.com/app/?app=06132),</a> and I was very happy to see that some people were even doing it.
+I mainly purchased the 3D objects and implemented the internal logic, map layout, and camera viewpoint control.</p>
 
   </div>
   </main>
