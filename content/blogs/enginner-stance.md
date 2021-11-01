@@ -5,6 +5,7 @@ draft: false
 ---
 
 # おすすめ資料
+- system design https://github.com/donnemartin/system-design-primer/blob/master/README-ja.md
 - 心が構え https://speakerdeck.com/recruitengineers/software-engineers-survival-guide
 - コーディング https://note.com/cyberz_cto/n/n26f535d6c575
 - インフラ https://12factor.net/ja/
