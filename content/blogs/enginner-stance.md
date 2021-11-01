@@ -6,7 +6,7 @@ draft: false
 
 # おすすめ資料
 - 心が構え https://speakerdeck.com/recruitengineers/software-engineers-survival-guide
-- コーディング https://note.com/cyberz_cto/n/n26f535d6c575#tvWjV
+- コーディング https://note.com/cyberz_cto/n/n26f535d6c575
 - インフラ https://12factor.net/ja/
 
 # 考察
@@ -16,3 +16,7 @@ draft: false
 常にベストプラクティスを意識する。  
 低レイヤーら高レイヤをある程度意識する。  
 これらを習慣にする。 
+
+# おすすめ本
+
+https://www.oreilly.co.jp/books/9784873117126/
