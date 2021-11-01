@@ -1,7 +1,7 @@
 ---
 title: "enginner-stance"
 date: 2021-11-01T17:46:29+09:00
-draft: true
+draft: false
 ---
 
 # おすすめ資料
