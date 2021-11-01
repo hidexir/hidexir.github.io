@@ -6,7 +6,36 @@
     <description>Recent content on hidexir</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 19 May 2021 20:00:00 +0900</lastBuildDate><atom:link href="https://hidexir.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Oct 2021 20:00:00 +0900</lastBuildDate><atom:link href="https://hidexir.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FAQ</title>
+      <link>https://hidexir.github.io/blogs/faq/</link>
+      <pubDate>Wed, 06 Oct 2021 20:00:00 +0900</pubDate>
+      
+      <guid>https://hidexir.github.io/blogs/faq/</guid>
+      <description>  連絡先は？ (Contact Info)
+GitHub: https://github.com/hidexir
+Twitter: https://twitter.com/hidexir
+  一番書く言語は？
+Go言語です。理由はもともと書いている時間がながく慣れているからです。 また静的型付けな部分、GCの優秀、並行処理の簡潔さ、あらゆることが標準ライブラリに備わっている。 以上の理由から一番好きです。
+  セキュリティエンジニアですか？
+いいえ。自分は正直インフラや開発もやるので、専任のセキュリティエンジニアとは思いません。またセキュリティエンジニアは本来プロダクト開発をわかっている。その上で成り立つと考えております。脆弱性には大きく入り口として、ロジックによるもの、CVEなどによるOSSやフレームワークによるものがあり、後者は仕組化して検知はわりとできますが、ビジネスロジックや開発フローにおける脆弱性はプロダクト開発への理解が必要です。
+  いま注目している言語は？
+Rustです。理由は 他の方ですが、https://hayatoito.github.io/2017/faq/#rust こちらを見ていただくのが良さそうです。
+  vimmerですか？
+はい。ですが、vimrcはあまり多く書きません。vimは軽量で高速だからvimです。十分vimで開発できると信じております。 また、
+  サイバーやGoogleなどの会社に入らないとダメですか？
+決してそれはないと思います。とはいえ上記のような企業が有利であるとかんがえるのは当然ですが、個人的にはどこの会社にいっても技術は大きく伸ばせると考えます。
+目の前に課題に対して広いアプローチをもち、適切な量インプットとアウトプットをすることに尽きます。
+  好きなブログの記事はなんでしょうか？
+https://hayatoito.github.io/2017/faq/#dynamic-programming-language-is-dead
+https://note.com/cyberz_cto/n/n26f535d6c575
+https://12factor.net/ja/
+  コンテナ技術に乗り換えるべきでしょうか？ 既存システムの兼ね合いですね。
+かならずしも正義ではないですが、得られる恩恵はでかいです。 個人的にはインフラを特定のマニュフェストで管理できることやデプロイの容易性やグリーンブルー、スケールアウトなどが大きいと考えます。 ただレガシーな構成だとホスト内部にストレージをつくったり、ログや影響などもあるので、慎重におこなったほうがいいです。
+  </description>
+    </item>
+    
     <item>
       <title>Cloud Native Reading Group #7: runc</title>
       <link>https://hidexir.github.io/blogs/cloud-native-reading-group-7-en/</link>
@@ -117,44 +146,6 @@ Back born もともと小さい頃からコンピューターは好きでした�
 仮想通貨事業でRustでjsonパーサーをつくったり、AbemaTVで広告の開発をしておりました。
 当時は低レイヤーが好きだったこともあり、Googleのエンジニアに漠然となりたいと考えていたのですが、アルゴリズムや英語能力がたりないと感じたので、国内のもっとも力がつくと考えそのままAbemaの開発をするためCyBerAgentに入社しました。
 Publish  新進気鋭のホワイトハッカーとアンチウイルスソフトがガチンコ対決! 戦いの結末をレポート istio-ingressgateway ssl https 証明書 中間証明書 導入するよ Nginxとnodejsで認証プロキシを実現する※basic認証じゃないよ！！ GKEにistio導入をした話  Skill 一般的にまともに仕事をしているとかなりの量になるので、ここでは中でも好きなこと、得意なことを中心に載せております。</description>
-    </item>
-    
-    <item>
-      <title>FAQ</title>
-      <link>https://hidexir.github.io/blogs/faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://hidexir.github.io/blogs/faq/</guid>
-      <description>  連絡先は？ (Contact Info)
-GitHub: https://github.com/hidexir
-Twitter: https://twitter.com/hidexir
-  一番書く言語は？
-Go言語です。理由はもともと書いている時間がながく慣れているからです。 また静的型付けな部分、GCの優秀、並行処理の簡潔さ、あらゆることが標準ライブラリに備わっている。 以上の理由から一番好きです。
-  セキュリティエンジニアですか？
-いいえ。自分は正直インフラや開発もやるので、専任のセキュリティエンジニアとは思いません。またセキュリティエンジニアは本来プロダクト開発をわかっている。その上で成り立つと考えております。脆弱性には大きく入り口として、ロジックによるもの、CVEなどによるOSSやフレームワークによるものがあり、後者は仕組化して検知はわりとできますが、ビジネスロジックや開発フローにおける脆弱性はプロダクト開発への理解が必要です。
-  いま注目している言語は？
-Rustです。理由は 他の方ですが、https://hayatoito.github.io/2017/faq/#rust こちらを見ていただくのが良さそうです。
-  vimmerですか？
-はい。ですが、vimrcはあまり多く書きません。vimは軽量で高速だからvimです。十分vimで開発できると信じております。 また、
-  サイバーやGoogleなどの会社に入らないとダメですか？
-決してそれはないと思います。とはいえ上記のような企業が有利であるとかんがえるのは当然ですが、個人的にはどこの会社にいっても技術は大きく伸ばせると考えます。
-目の前に課題に対して広いアプローチをもち、適切な量インプットとアウトプットをすることに尽きます。
-  好きなブログの記事はなんでしょうか？
-https://hayatoito.github.io/2017/faq/#dynamic-programming-language-is-dead
-https://note.com/cyberz_cto/n/n26f535d6c575
-https://12factor.net/ja/
-  コンテナ技術に乗り換えるべきでしょうか？ 既存システムの兼ね合いですね。
-かならずしも正義ではないですが、得られる恩恵はでかいです。 個人的にはインフラを特定のマニュフェストで管理できることやデプロイの容易性やグリーンブルー、スケールアウトなどが大きいと考えます。 ただレガシーな構成だとホスト内部にストレージをつくったり、ログや影響などもあるので、慎重におこなったほうがいいです。
-  </description>
-    </item>
-    
-    <item>
-      <title>エンジニアとしてのスタンス</title>
-      <link>https://hidexir.github.io/blogs/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://hidexir.github.io/blogs/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9/</guid>
-      <description>おすすめ資料  心が構え https://speakerdeck.com/recruitengineers/software-engineers-survival-guide コーディング https://note.com/cyberz_cto/n/n26f535d6c575#tvWjV インフラ https://12factor.net/ja/  考察 課題を適切に切り出す 良質なインプットを増やす。 常にベストプラクティスを意識する。 低レイヤーら高レイヤをある程度意識する。 これらを習慣にする。</description>
     </item>
     
   </channel>

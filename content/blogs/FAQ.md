@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-date: 2021-10-6T20:00:00+09:00
+date: 2021-10-06T20:00:00+09:00
 draft: false
 ---
 - 連絡先は？ (Contact Info)  
